@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "TestTagHelper";
+}
+
+<h2>TestTagHelper</h2>
+
+@model MvcTutorialsTeacher.Models.Student
+
+<form asp-controller="Student" asp-action="TestTagHelper" method="post">
+    <label asp-for="StudentName"></label>
+    <input asp-for="StudentName"></input>
+    <input type="submit" />
+
+</form>
+

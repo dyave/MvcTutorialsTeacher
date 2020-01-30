@@ -24,5 +24,15 @@ namespace MvcTutorialsTeacher.Controllers
 
             return View(studentList);
         }
+
+        public IActionResult TestTagHelper()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult TestTagHelper([FromForm] Student std)
+        {
+            return View();
+        }
     }
 }
